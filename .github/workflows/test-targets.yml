@@ -1,0 +1,68 @@
+name: test-targets
+
+on:
+  push:
+    branches:
+      - enhancement/*
+      - fix/*
+      - feature/*
+      - hotfix/*
+  # pull_request:
+  #   branches:
+  #     - main
+  #     - master
+  #     - dev
+  workflow_dispatch:
+    branches:
+      - '*'
+  #schedule:
+  #  - cron: "0 13 * * 2"
+      
+jobs:
+  test-targets:
+    runs-on: ubuntu-latest                                # Run on GitHub Actions runner
+    #runs-on: [self-hosted, linux, x64, onprem-cluster]   # Run the workflow on a cluser you have access to - https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idruns-on
+    container:
+      image: rocker/verse:4.4.3
+    # env:
+    #   GIT_CRYPT_KEY64: ${{ secrets.GIT_CRYPT_KEY64 }}
+      
+    steps:
+      - name: update permissions for container based workflows
+        run: git config --global --add safe.directory /__w/r-reproducible-repo/r-reproducible-repo
+      
+      - uses: actions/checkout@v4 # https://github.com/actions/checkout
+      
+      - name: Install system dependencies
+        run: |
+          sh sys_deps/sys_deps.sh
+
+      # - name: Decrypt repository using symmetric key
+      #   run: |
+      #     echo $GIT_CRYPT_KEY64 > git_crypt_key.key64 && base64 -di git_crypt_key.key64 > git_crypt_key.key && git-crypt unlock git_crypt_key.key
+      #     rm git_crypt_key.key git_crypt_key.key64
+          
+      - name: Install packages from renv.lock (with cache)
+        if: ${{ !env.ACT }}  ## Doesn't work locally with ACT
+        uses: r-lib/actions/setup-renv@v2
+        with:
+          cache-version: 4
+
+      - name: Install packages from renv.lock (local, no cache)
+        if: ${{ env.ACT }}  ## Only locally with ACT, use `act -r` to reuse containers, effectively caching locally
+        run: |
+          renv::restore()
+        shell: Rscript {0}
+
+      - name: Run targets workflow in CI
+        if: ${{ !env.ACT }}
+        run: |
+          targets::tar_make()
+        shell: Rscript {0}
+        
+      - name: Run targets workflow local with ACT
+        if: ${{ env.ACT }}
+        run: |
+          targets::tar_make()
+        shell: Rscript {0}
+      
