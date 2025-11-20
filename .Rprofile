@@ -1,4 +1,4 @@
-# Use the local user's .Rprofile when interative.
+# Use the local user's .Rprofile when interactive.
 # Good for keeping local preferences, but not always reproducible.
 user_rprof <- Sys.getenv("R_PROFILE_USER", normalizePath("~/.Rprofile", mustWork = FALSE))
 if(interactive() && file.exists(user_rprof)) {
@@ -29,7 +29,7 @@ if (Sys.info()[["sysname"]] %in% c("Darwin", "Windows")){
   options(renv.config.repos.override = c(
     PPM = "https://packagemanager.posit.co/cran/latest"))
 }
-# source("renv/activate.R")
+source("renv/activate.R")
 
 # If project packages have conflicts define them here so as
 # as to manage them across all sessions when building targets
