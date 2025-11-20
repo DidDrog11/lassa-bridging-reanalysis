@@ -1,149 +1,71 @@
-# r-reproducible-repo
+# Project: Lassa Virus Spillover Risk Reassessment (IMSOM-SIR)
 
-The repository provides a template for reproducible R projects. It uses [`{targets}`](https://books.ropensci.org/targets/) to manage code execution (among other things) and [`{renv}`](https://rstudio.github.io/renv/index.html) to manage packages. Compute environments are managed via [docker](https://rocker-project.org/) and continuous integration happens in [github actions](https://docs.github.com/en/actions).
+### Project Rationale
 
-## How to use the template
+This project undertakes a rigorous re-analysis and extension of the Lassa virus (LASV) spillover model published in Bridging the gap: Using reservoir ecology and human serosurveys to estimate Lassa virus spillover in West Africa (Basinski et al. 2021).
 
-1)  On [github.com](https://github.com/viralemergence/r-reproducible-repo) click "Use this template" or run the following code from the command line.
+The primary objective is to **test three key hypotheses** regarding the drivers and burden of LASV spillover:
 
-```         
-gh repo create my-new-project --template viralemergence/r-reproducible-repo --private --clone
-```
+1.  **Ecological Improvement Test:** To assess whether incorporating **interspecies competition** and co-occurrence dynamics using a **Joint Species Distribution Model (JSDM)** (Doser, Finley and Banerjee. 2023) significantly improves the accuracy of the primary reservoir's (*Mastomys natalensis*) distribution layer ($\boldsymbol{D_M}$), compared to the original single-species model.
+2.  **Epidemiological Uncertainty Reduction:** To incorporate the most current literature on LASV antibody waning ($\boldsymbol{\lambda}$) into the steady-state SIR framework to reduce the current $\sim 5$-fold uncertainty in annual human infection estimates.
+3.  **Case Reporting Bias Detection:** To use the model's prediction of annual incidence ($\boldsymbol{F S^*}$) as an ecological baseline against which to validate against official reported case data. This comparison will spatially identify regions where underdiagnosis or underreporting is suspected to be substantial.
 
-2)  [Clone the repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) from Github to your local machine
+The analysis utilises **R**, with packages managed via `{renv}`, and employs a two-stage hierarchical modelling approach: an Integrated Multi-Species Occupancy Model (IMSOM) for the ecological stage, followed by calibration using a Quasi-binomial GLM and conversion via an SIR model.
 
-```         
-# in location where the project should live
-git clone https://github.com/user-name/repo-name.git
-```
+References
 
-3)  Open `scripts/project_startup.R` and follow the script.
+Basinski, A. J., Fichet-Calvet, E., Sjodin, A. R., et al. 2021. Bridging the Gap: Using Reservoir Ecology and Human Serosurveys to Estimate Lassa Virus Spillover in West Africa. PLOS Computational Biology, 17(3): e1008811. DOI: [10.1371/journal.pcbi.1008811](https://doi.org/10.1371/journal.pcbi.1008811)
 
-4)  Write code in {targets}, use `renv::snapshot()` to keep dependencies up to date, and share your project with github!
+Doser, Jeffrey W, Andrew O Finley, and Sudipto Banerjee. 2023. Joint Species Distribution Models with Imperfect Detection for High-Dimensional Spatial Data. Ecology 104(9): e4137. DOI: [10.1002/ecy.4137](https://doi.org/10.1002/ecy.4137)
 
-    -   `usethis::use_r("my-function")` will create a new file in your /R folder
-    -   [`{fnmate}`](https://github.com/MilesMcBain/fnmate) is super handy for this as well.
+***
 
-## Includes
+## Project Setup and Reproducibility
 
--   \_targets.R
--   packages.R
--   .github/workflow
--   .env
--   /R
--   /Scripts/project_startup.R
--   License.md
--   Readme.md
+This project uses a provided template (VERERNA Consortium)[https://github.com/viralemergence/r-reproducible-repo] and relies on `{renv}` to manage package dependencies.
 
-## Nice conventions
+### 🚀 Getting Started
 
--   List all your packages in `packages.R` 
--   All targets are nouns and all functions are verbs
--   Each function lives in its own file.
--   Each function is well documented with roxygen tags (press `cmd + shift + r` with cursor inside the function parenthesis)
--   Use the scripts folder for code that works outside the targets framework and that you want to save (e.g. testing/debugging functions, data wrangling that only has to happen once, etc.)
--   Use psuedo-code/in line comments to make `_targets.R` easier to follow
--   Use an R formatter like [`{air}`](https://www.tidyverse.org/blog/2025/02/air/) to keep your code tidy or use built-in IDE functions e.g. `cmd + shift + i` in rstudio.
--   Commit often. Keep commit messages brief.
--   Use a branching strategy and issues when working in GIT to keep work manageable. Each branch should address a specific issue.
-    -   enhancement - branch name used for improving the code base (re-factoring, improving documentation, etc)
-    -   fix - branch name used to repair some broken piece of code previously commited to `main`
-    -   feature - branch name used for adding new elements to the code base (e.g. new modeling approach, new visualizations, etc)
-    -   hotfix - branch name used to repair something that needs immediate attention.
+1.  **Clone Repository:**
+    ```bash
+    git clone [https://github.com/DidDrog11/lassa-bridging-reanalysis.git](https://github.com/DidDrog11/lassa-bridging-reanalysis.git)
+    ```
+2.  **Initialize Project:** Open `scripts/project_startup.R` and follow the instructions to set up the environment and restore packages using `renv::restore()`.
+3.  **Code Workflow:** All analytical code will be executed sequentially from the `main_workflow.R` script, calling modular functions stored in the `/R` folder.
 
-### renv
+***
 
-At some point `renv` will cause you a headache. Its a good idea to talk to collaborators about how you will manage the lock file.
+## Project Checklist: Lassa Spillover Reanalysis
 
-Ideally one person runs `renv::init()` when the project is started and everyone can just use `renv::restore()` to keep their package versions in sync. In practice there is always one package that causes an issue. This becomes more of a problem as R versions diverge among collaborators.
+This checklist maps the required data and analysis steps to the project workflow.
 
-Possible solutions: burn it to the ground run `renv::deactivate(clean = TRUE)` and then re-initialize `renv`. Less drastic measures include using `renv::hydrate()` to load whatever version of the package is already on your machine or `renv::snapshot()` to update the lockfile with new package versions because some package won't compile.
+### Stage 1: Refined Host Ecological Modeling ($\boldsymbol{D_M}$)
 
-## Running Github Actions locally (e.g. not wasting time/server minutes)
+| Status | Component | Description & Key R Functions |
+| :---: | :--- | :--- |
+| $\square$ | **A. Data Aggregation & Cleaning** | Clean and format all occurrence/non-detection data for the target species, including "true absence"" points. |
+| $\square$ | **B. Site Master List & Covariates** | Create master site list and extract environmental predictors ($\boldsymbol{occ.covs}$) for all unique locations. |
+| $\square$ | **C. IMSOM Data Preparation** | Structure the data into the necessary input format for `intMsPGOcc()`: **Source 1 (Replicated Surveys)** and **Source 2 (Aggregated Data)** arrays, including linking indices (`sites`, `species`). |
+| $\square$ | **D. Benchmark JSDM (Model A)** | Run the **Hierarchical JSDM with Detection** on **Source 1** to establish a high-confidence baseline for parameter estimates. |
+| $\square$ | **E. Full Coverage JSDM (Model B)** | Run the **Integrated JSDM** (`intMsPGOcc()`) on **Sources 1 & 2 combined** to generate the full-coverage $\boldsymbol{D_M}$ layer. Use `n.omp.threads` for parallelisation. |
+| $\square$ | **F. Bias Assessment** | Quantify the consistency of $\boldsymbol{\psi}$ estimates and covariance ($\boldsymbol{\rho}_{ij}$) between Model A and Model B. |
+| $\square$ | **G. Final $\boldsymbol{D_M}$ Layer** | Generate the spatial raster map of predicted *M. natalensis* suitability based on the full integrated Model B. |
 
-The test-targets.yml file includes conditions for running github actions locally using [ACT](https://nektosact.com/introduction.html).
+### Stage 2: Epidemiological Integration and Incidence
 
-`act` is a command line tool so all instructions should be run in a terminal.
+| Status | Component | Description & Data Source |
+| :---: | :--- | :--- |
+| $\square$ | **H. Pathogen Layer ($\boldsymbol{D_L}$)** | Reuse the original study's $\boldsymbol{D_L}$ predictions (LASV in rodents). |
+| $\square$ | **I. Composite Risk Layer ($\boldsymbol{D_X}$)** | Calculate the new combined risk: $\boldsymbol{D_X} = \boldsymbol{D_M} \times \boldsymbol{D_L}$. |
+| $\square$ | **J. Seroreversion Parameter ($\boldsymbol{\lambda}$)** | Search and incorporate the latest literature to define a more precise range or single value for $\boldsymbol{\lambda}_{new}$. |
+| $\square$ | **K. Seroprevalence Regression** | Re-run the Quasi-binomial Regression of human seroprevalence ($\boldsymbol{F}$) against the new $\boldsymbol{D_X}$ layer. |
+| $\square$ | **L. Incidence Calculation** | Apply the steady-state SIR framework (Equation 6) using $\boldsymbol{D_X}$ and $\boldsymbol{\lambda}_{new}$ to calculate the predicted annual human infection rate ($\boldsymbol{F S^*}$). |
 
-These instructions are for Mac/Linux machines - windows users should be able to follow along with [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+### Stage 3: Validation and Final Output
 
-### Installation
-
-0)  install [homebrew](https://brew.sh/) for package management
-1)  install docker `brew install docker` or use [desktop application](https://www.docker.com/products/docker-desktop/)
-2)  install act `brew install act`
-
-### The fundamentals
-
-### List workflows
-
-```         
-act -l
-
-### returns
-# Stage  Job ID        Job name      Workflow name  Workflow file     Events                
-# 0      test-targets  test-targets  test-targets   test-targets.yml  push,workflow_dispatch
-```
-
-This repo has a single workflow file called `test-targets.yml` that lives in `.github/workflows`.
-
-The `Job ID` comes from line 22 in the yml file and since we did not explicitly set a name, `Job name` is the same as `Job ID`. `Job Name` is what will be displayed on github when the job is run.
-
-Workflow name comes from line 1 and is the name of the workflow that will be displayed on github when the action is run.
-
-`Events` tells us under what conditions the workflow will be run. In this case, on push and via manual dispatch (clicking a button in github).
-
-#### Filtering the list
-
-The following command will list all workflows that are triggered on pull request.
-
-```         
-act -l pull_request
-```
-
-Since none of the actions in the repo are setup to run after a pull request is initiated, no items are returned.
-
-By default, `act` looks for workflows with `push` triggers.
-
-### run workflows
-
-Note: on an intel mac I had to make some minor changes to two files
-
-```         
-### change credsStore to credStore
-vim ~/.docker/config.json
-
-### add the following text to avoid errors with mounting docker images
-### --container-daemon-socket -
-~ % vim ~/.actrc
-```
-
-#### Run all workflow files that have an "on push" trigger
-
-```         
-act
-```
-
-#### run a specific job
-
-```         
-act -j test-targets
-```
-
-#### run a specific job and re-use containers
-
-Caches containers to make things more efficient.
-
-```         
-act -r -j test-targets
-```
-
-### Documentation
-
-To see all the options you can set with `act` run
-
-```         
-act --help
-```
-
-For some worked examples see the[usage guide](https://nektosact.com/usage/index.html).
+| Status | Component | Description & Expected Finding |
+| :---: | :--- | :--- |
+| $\square$ | **M. Reported Case Data (H)** | **CRITICAL NEW DATA:** Gather and clean regional/national Lassa Fever case reports. |
+| $\square$ | **N. External Validation** | Compare the predicted infections ($\boldsymbol{F S^*}$) to the reported case data ($\boldsymbol{H}$). |
+| $\square$ | **O. Underreporting Hotspot Mapping** | Map the residuals (Predicted Infections - Reported Cases) to highlight areas of potential underreporting. |
+| $\square$ | **P. Final Results** | Summarize the revised range of annual LASV human infections and report on the ecological findings (species interaction effects). |

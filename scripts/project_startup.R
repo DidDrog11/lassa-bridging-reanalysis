@@ -21,15 +21,3 @@ renv::init()
 # use renv::install to install missing packages
 #renv::install("openssl")
 
-# At some point `renv` will cause you a headache. 
-# Its a good idea to talk to collaborators about how you will manage
-# the lock file.
-# To burn it to the ground run `renv::deactivate(clean = TRUE)`. 
-# Less drastic measures include using `renv::hydrate()` to load
-# whatever version of the package is already on your mache or
-# `renv::snapshot()` to update the lockfile with new package versions
-# because {mass v1.1.0} won't compile.
- 
-## And you're off! Edit the targets file
-usethis::edit_file(here::here("_targets.R"))
-
