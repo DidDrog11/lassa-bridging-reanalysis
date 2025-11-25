@@ -28,6 +28,9 @@ vignettes/*.pdf
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
 .httr-oauth
 
+# .env
+.env
+
 # knitr and R markdown default cache directories
 *_cache/
 /cache/
@@ -50,3 +53,4 @@ rsconnect/
 
 # Data
 data/raw
+data/processed/ndvi_clean_monthly_stack.tif
