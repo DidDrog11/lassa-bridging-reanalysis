@@ -69,3 +69,21 @@ This checklist maps the required data and analysis steps to the project workflow
 | $\square$ | **N. External Validation** | Compare the predicted infections ($\boldsymbol{F S^*}$) to the reported case data ($\boldsymbol{H}$). |
 | $\square$ | **O. Underreporting Hotspot Mapping** | Map the residuals (Predicted Infections - Reported Cases) to highlight areas of potential underreporting. |
 | $\square$ | **P. Final Results** | Summarize the revised range of annual LASV human infections and report on the ecological findings (species interaction effects). |
+
+### Environmental Data
+
+| Predictor |	Description |	Original | Source |	Updated Source / R Acquisition Strategy |
+| :---: | :--- | :--- |
+| Tmu |	Mean daily Temperature (C) |	MODIS |	Use Pre-Averaged Product (Mean Annual Temperature) / WorldClim via {geodata}. |
+| Pmu |	Mean daily Precipitation (mm/day)	| CHIRPS | Use Pre-Averaged Product (Annual Precipitation) / WorldClim via {geodata}. |
+| Nmu	| Mean NDVI	| MODIS |	MODIS products (e.g., MOD13A2) via {MODIStools}. |
+| Pcv, Ncv |	Coefficient of Variation (CV) for Precip/NDVI |	Calculated |	Calculate from monthly rasters (2001–2025). |
+| Pmin, Nmin |	Average Minimum Precip/NDVI per year |	Calculated |	Calculate from monthly rasters (2001–2025). |
+| Pmax, Nmax |	Average Maximum Precip/NDVI per year |	Calculated |	Calculate from monthly rasters (2001–2025). |
+| Pc, Nc |	Colwell's Constancy Index (Precip/NDVI)	| Calculated |	Calculate using {dismo} or custom R function on monthly data. |
+| Pm, Nm |	Colwell's Contingency Index (Precip/NDVI)	Calculated |	Calculate using {dismo} or custom R function on monthly data. |
+| Pdur |	Duration of low Precip (≤1 mm/day) |	Calculated |	Calculate from monthly rasters (2001–2025). |
+| Ndur |	Duration of low NDVI (≤0.5) |	Calculated |	Calculate from monthly rasters (2001–2025). |
+| 11 Land Cover Layers |	Local density (fraction) of stable land cover types in surrounding 0.15∘×0.15∘ area.|	MODIS Land Cover (2001)	ESA WorldCover (2020) or recent MODIS Land Cover (e.g., MCD12Q1). Requires calculating long-term stability (2001–2025).|
+| Elev |	Elevation (m) |	USGS DEM |	SRTM or ASTER GDEM via {geodata}. |
+| Pop |	Human Population Density (humans/km2) |	WorldPop 2020	| WorldPop 2025 Projection via WorldPop FTP/API. |
