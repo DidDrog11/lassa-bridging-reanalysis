@@ -10,6 +10,7 @@ library(spOccupancy) # JSDM and Spatial Modelling
 library(sf)
 library(terra) # Efficient raster handling
 library(rgbif) # Access GBIF API
+library(coda) # MCMC
 
 # Data Wrangling and Visualisation
 library(dplyr)
