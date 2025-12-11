@@ -59,4 +59,4 @@ data/raw/*
 !data/raw/basinski_comparison/
 !data/raw/iucn/
 data/processed/ndvi_clean_monthly_stack.tif
-results/models/*.rds
+results/models/*.rds.env
