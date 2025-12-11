@@ -1,0 +1,10 @@
+"Source_Category","Target","Period","N_Sites","N_Positive","City_Sites","Town_Sites","Rural_Sites","N_Mnat (1 sp.)","N_Invasive (2 spp.)","N_Native (5 spp.)"
+"Systematic Surveys (ArHa/WA)","Small Mammal Community","1964-2019",677,NA,158,70,457,630,798,1044
+"Targeted Urban Search","Small Mammal Community","1980-2021",148,NA,123,11,13,144,282,77
+"Opportunistic / GBIF","Small Mammal Community","1977-2025",4083,NA,71,116,3894,844,4415,4301
+"PCR","M. natalensis","1972-2022",54,713,2,12,41,4234,NA,NA
+"Serology","M. natalensis","1972-2022",47,459,2,7,38,3949,NA,NA
+"Virus Culture","M. natalensis","1972-2022",2,5,0,1,1,51,NA,NA
+"Human Seroprevalence","Community (IgG)","1970-2024",197,5262,7,25,165,NA,NA,NA
+"NCDC Surveillance (Nigeria)","Confirmed Cases (Binary)","2018-2025",775,263,NA,NA,NA,NA,NA,NA
+"Regional Surveillance (Moore et al.)","Confirmed Cases (Count)","2012-2022",338,340,NA,NA,NA,NA,NA,NA

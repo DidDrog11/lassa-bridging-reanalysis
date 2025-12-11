@@ -52,5 +52,11 @@ po/*~
 rsconnect/
 
 # Data
-data/raw
+data/raw/*
+# Add exceptions
+!data/raw/Project_ArHa_database.rds
+!data/raw/WA_rodents_database.rds
+!data/raw/basinski_comparison/
+!data/raw/iucn/
 data/processed/ndvi_clean_monthly_stack.tif
+results/models/*.rds

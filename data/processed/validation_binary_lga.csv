@@ -1,0 +1,776 @@
+"LGA_Code","State","LGA","Status","Years_Reported","Last_Reported"
+"NGA.1.1_1","Abia","Aba North",0,NA,NA
+"NGA.1.2_1","Abia","Aba South",0,NA,NA
+"NGA.1.3_1","Abia","Arochukwu",1,1,2019
+"NGA.1.4_1","Abia","Bende",1,1,2020
+"NGA.1.5_1","Abia","Ikwuano",1,1,2020
+"NGA.1.6_1","Abia","Isiala Ngwa North",0,NA,NA
+"NGA.1.7_1","Abia","Isiala Ngwa South",0,NA,NA
+"NGA.1.8_1","Abia","Isuikwuato",0,NA,NA
+"NGA.1.9_1","Abia","Obi Ngwa",0,NA,NA
+"NGA.1.10_1","Abia","Ohafia",0,NA,NA
+"NGA.1.11_1","Abia","Osisioma Ngwa",0,NA,NA
+"NGA.1.12_1","Abia","Ugwunagbo",0,NA,NA
+"NGA.1.13_1","Abia","Ukwa East",0,NA,NA
+"NGA.1.14_1","Abia","Ukwa West",0,NA,NA
+"NGA.1.15_1","Abia","Umu Nneochi",0,NA,NA
+"NGA.1.16_1","Abia","Umuahia North",1,2,2021
+"NGA.1.17_1","Abia","Umuahia South",1,1,2020
+"NGA.2.1_1","Adamawa","Demsa",0,NA,NA
+"NGA.2.2_1","Adamawa","Fufore",1,1,2019
+"NGA.2.3_1","Adamawa","Ganye",0,NA,NA
+"NGA.2.4_1","Adamawa","Girie",0,NA,NA
+"NGA.2.5_1","Adamawa","Gombi",1,1,2020
+"NGA.2.6_1","Adamawa","Guyuk",0,NA,NA
+"NGA.2.7_1","Adamawa","Hong",0,NA,NA
+"NGA.2.8_1","Adamawa","Jada",0,NA,NA
+"NGA.2.9_1","Adamawa","Lamurde",0,NA,NA
+"NGA.2.10_1","Adamawa","Madagali",0,NA,NA
+"NGA.2.11_1","Adamawa","Maiha",0,NA,NA
+"NGA.2.12_1","Adamawa","Mayo-Belwa",1,1,2023
+"NGA.2.13_1","Adamawa","Michika",1,1,2022
+"NGA.2.14_1","Adamawa","Mubi North",0,NA,NA
+"NGA.2.15_1","Adamawa","Mubi South",0,NA,NA
+"NGA.2.16_1","Adamawa","Numan",1,1,2020
+"NGA.2.17_1","Adamawa","Shelleng",0,NA,NA
+"NGA.2.18_1","Adamawa","Song",0,NA,NA
+"NGA.2.19_1","Adamawa","Teungo",0,NA,NA
+"NGA.2.20_1","Adamawa","Yola North",0,NA,NA
+"NGA.2.21_1","Adamawa","Yola South",0,NA,NA
+"NGA.3.1_1","Akwa Ibom","Abak",0,NA,NA
+"NGA.3.2_1","Akwa Ibom","Eastern Obolo",0,NA,NA
+"NGA.3.3_1","Akwa Ibom","Eket",0,NA,NA
+"NGA.3.4_1","Akwa Ibom","Esit Eket",0,NA,NA
+"NGA.3.5_1","Akwa Ibom","Essien Udim",0,NA,NA
+"NGA.3.6_1","Akwa Ibom","Etim Ekpo",0,NA,NA
+"NGA.3.7_1","Akwa Ibom","Etinan",0,NA,NA
+"NGA.3.8_1","Akwa Ibom","Ibeno",0,NA,NA
+"NGA.3.9_1","Akwa Ibom","Ibesikpo Asutan",0,NA,NA
+"NGA.3.10_1","Akwa Ibom","Ibiono Ibom",0,NA,NA
+"NGA.3.11_1","Akwa Ibom","Ika",0,NA,NA
+"NGA.3.12_1","Akwa Ibom","Ikono",0,NA,NA
+"NGA.3.13_1","Akwa Ibom","Ikot Abasi",0,NA,NA
+"NGA.3.14_1","Akwa Ibom","Ikot Ekpene",0,NA,NA
+"NGA.3.15_1","Akwa Ibom","Ini",0,NA,NA
+"NGA.3.16_1","Akwa Ibom","Itu",0,NA,NA
+"NGA.3.17_1","Akwa Ibom","Mbo",0,NA,NA
+"NGA.3.18_1","Akwa Ibom","Mkpat Enin",0,NA,NA
+"NGA.3.19_1","Akwa Ibom","Nsit Atai",0,NA,NA
+"NGA.3.20_1","Akwa Ibom","Nsit Ibom",0,NA,NA
+"NGA.3.21_1","Akwa Ibom","Nsit Ubium",0,NA,NA
+"NGA.3.22_1","Akwa Ibom","Obot Akara",0,NA,NA
+"NGA.3.23_1","Akwa Ibom","Okobo",0,NA,NA
+"NGA.3.24_1","Akwa Ibom","Onna",0,NA,NA
+"NGA.3.25_1","Akwa Ibom","Oron",0,NA,NA
+"NGA.3.26_1","Akwa Ibom","Oruk Anam",0,NA,NA
+"NGA.3.27_1","Akwa Ibom","Udung Uko",0,NA,NA
+"NGA.3.28_1","Akwa Ibom","Ukanafun",0,NA,NA
+"NGA.3.29_1","Akwa Ibom","Uruan",0,NA,NA
+"NGA.3.30_1","Akwa Ibom","Urue Offong",0,NA,NA
+"NGA.3.31_1","Akwa Ibom","Uyo",0,NA,NA
+"NGA.4.1_1","Anambra","Aguata",0,NA,NA
+"NGA.4.2_1","Anambra","Anambra East",1,4,2024
+"NGA.4.3_1","Anambra","Anambra West",1,3,2022
+"NGA.4.4_1","Anambra","Anaocha",0,NA,NA
+"NGA.4.5_1","Anambra","Awka North",1,2,2022
+"NGA.4.6_1","Anambra","Awka South",0,NA,NA
+"NGA.4.7_1","Anambra","Ayamelum",1,1,2022
+"NGA.4.8_1","Anambra","Dunukofia",0,NA,NA
+"NGA.4.9_1","Anambra","Ekwusigo",0,NA,NA
+"NGA.4.10_1","Anambra","Idemili North",1,1,2021
+"NGA.4.11_1","Anambra","Idemili South",1,1,2023
+"NGA.4.12_1","Anambra","Ihiala",0,NA,NA
+"NGA.4.13_1","Anambra","Njikoka",0,NA,NA
+"NGA.4.14_1","Anambra","Nnewi North",0,NA,NA
+"NGA.4.15_1","Anambra","Nnewi South",0,NA,NA
+"NGA.4.16_1","Anambra","Ogbaru",1,1,2024
+"NGA.4.17_1","Anambra","Onitsha North",1,1,2021
+"NGA.4.18_1","Anambra","Onitsha South",0,NA,NA
+"NGA.4.19_1","Anambra","Orumba North",0,NA,NA
+"NGA.4.20_1","Anambra","Orumba South",0,NA,NA
+"NGA.4.21_1","Anambra","Oyi",0,NA,NA
+"NGA.5.1_1","Bauchi","Alkaleri",1,6,2024
+"NGA.5.2_1","Bauchi","Bauchi",1,7,2024
+"NGA.5.3_1","Bauchi","Bogoro",1,1,2024
+"NGA.5.4_1","Bauchi","Damban",0,NA,NA
+"NGA.5.5_1","Bauchi","Darazo",0,NA,NA
+"NGA.5.6_1","Bauchi","Dass",1,5,2024
+"NGA.5.7_1","Bauchi","Gamawa",1,1,2022
+"NGA.5.8_1","Bauchi","Ganjuwa",1,6,2024
+"NGA.5.9_1","Bauchi","Giade",0,NA,NA
+"NGA.5.10_1","Bauchi","Itas/Gadau",1,1,2023
+"NGA.5.11_1","Bauchi","Jama'are",0,NA,NA
+"NGA.5.12_1","Bauchi","Katagum",1,2,2023
+"NGA.5.13_1","Bauchi","Kirfi",1,4,2024
+"NGA.5.14_1","Bauchi","Misau",1,1,2020
+"NGA.5.15_1","Bauchi","Ningi",1,2,2024
+"NGA.5.16_1","Bauchi","Shira",0,NA,NA
+"NGA.5.17_1","Bauchi","Tafawa-Balewa",1,7,2024
+"NGA.5.18_1","Bauchi","Toro",1,7,2024
+"NGA.5.19_1","Bauchi","Warji",0,NA,NA
+"NGA.5.20_1","Bauchi","Zaki",0,NA,NA
+"NGA.6.1_1","Bayelsa","Brass",0,NA,NA
+"NGA.6.2_1","Bayelsa","Ekeremor",0,NA,NA
+"NGA.6.3_1","Bayelsa","Kolokuma/Opokuma",0,NA,NA
+"NGA.6.4_1","Bayelsa","Nembe",0,NA,NA
+"NGA.6.5_1","Bayelsa","Ogbia",0,NA,NA
+"NGA.6.6_1","Bayelsa","Sagbama",0,NA,NA
+"NGA.6.7_1","Bayelsa","Southern Ijaw",0,NA,NA
+"NGA.6.8_1","Bayelsa","Yenagoa",0,NA,NA
+"NGA.7.1_1","Benue","Ado",1,2,2024
+"NGA.7.2_1","Benue","Agatu",0,NA,NA
+"NGA.7.3_1","Benue","Apa",0,NA,NA
+"NGA.7.4_1","Benue","Bukuru",1,1,2020
+"NGA.7.5_1","Benue","Gboko",1,2,2024
+"NGA.7.6_1","Benue","Guma",1,3,2024
+"NGA.7.7_1","Benue","Gwer East",1,2,2023
+"NGA.7.8_1","Benue","Gwer West",1,1,2024
+"NGA.7.9_1","Benue","Katsina-Ala",0,NA,NA
+"NGA.7.10_1","Benue","Konshisha",1,2,2023
+"NGA.7.11_1","Benue","Kwande",0,NA,NA
+"NGA.7.12_1","Benue","Logo",0,NA,NA
+"NGA.7.13_1","Benue","Makurdi",1,3,2022
+"NGA.7.14_1","Benue","Obi",1,3,2024
+"NGA.7.15_1","Benue","Ogbadibo",1,1,2020
+"NGA.7.16_1","Benue","Ohimini",0,NA,NA
+"NGA.7.17_1","Benue","Oju",0,NA,NA
+"NGA.7.18_1","Benue","Okpokwu",1,3,2024
+"NGA.7.19_1","Benue","Otukpo",1,2,2024
+"NGA.7.20_1","Benue","Tarka",0,NA,NA
+"NGA.7.21_1","Benue","Ukum",1,1,2024
+"NGA.7.22_1","Benue","Ushongo",1,1,2020
+"NGA.7.23_1","Benue","Vande Ikya",1,1,2022
+"NGA.8.1_1","Borno","Abadam",0,NA,NA
+"NGA.8.2_1","Borno","Askira/Uba",0,NA,NA
+"NGA.8.3_1","Borno","Bama",0,NA,NA
+"NGA.8.4_1","Borno","Bayo",1,1,2020
+"NGA.8.5_1","Borno","Biu",1,1,2020
+"NGA.8.6_1","Borno","Chibok",0,NA,NA
+"NGA.8.7_1","Borno","Damboa",0,NA,NA
+"NGA.8.8_1","Borno","Dikwa",0,NA,NA
+"NGA.8.9_1","Borno","Gubio",0,NA,NA
+"NGA.8.10_1","Borno","Guzamala",0,NA,NA
+"NGA.8.11_1","Borno","Gwoza",0,NA,NA
+"NGA.8.12_1","Borno","Hawul",0,NA,NA
+"NGA.8.13_1","Borno","Jere",0,NA,NA
+"NGA.8.14_1","Borno","Kaga",0,NA,NA
+"NGA.8.15_1","Borno","Kala/Balge",0,NA,NA
+"NGA.8.16_1","Borno","Konduga",0,NA,NA
+"NGA.8.17_1","Borno","Kukawa",0,NA,NA
+"NGA.8.18_1","Borno","Kwaya Kusar",0,NA,NA
+"NGA.8.19_1","Borno","Lake Chad",0,NA,NA
+"NGA.8.20_1","Borno","Mafa",0,NA,NA
+"NGA.8.21_1","Borno","Magumeri",1,1,2020
+"NGA.8.22_1","Borno","Maiduguri",0,NA,NA
+"NGA.8.23_1","Borno","Marte",0,NA,NA
+"NGA.8.24_1","Borno","Mobbar",0,NA,NA
+"NGA.8.25_1","Borno","Monguno",0,NA,NA
+"NGA.8.26_1","Borno","Ngala",0,NA,NA
+"NGA.8.27_1","Borno","Nganzai",0,NA,NA
+"NGA.8.28_1","Borno","Shani",0,NA,NA
+"NGA.9.1_1","Cross River","Abi",1,1,2024
+"NGA.9.2_1","Cross River","Akamkpa",0,NA,NA
+"NGA.9.3_1","Cross River","Akpabuyo",0,NA,NA
+"NGA.9.4_1","Cross River","Bakassi",0,NA,NA
+"NGA.9.5_1","Cross River","Bekwarra",0,NA,NA
+"NGA.9.6_1","Cross River","Biase",0,NA,NA
+"NGA.9.7_1","Cross River","Boki",1,1,2022
+"NGA.9.8_1","Cross River","Calabar",0,NA,NA
+"NGA.9.9_1","Cross River","Calabar South",0,NA,NA
+"NGA.9.10_1","Cross River","Etung",0,NA,NA
+"NGA.9.11_1","Cross River","Ikom",1,2,2022
+"NGA.9.12_1","Cross River","Obanliku",0,NA,NA
+"NGA.9.13_1","Cross River","Obubra",1,2,2024
+"NGA.9.14_1","Cross River","Obudu",0,NA,NA
+"NGA.9.15_1","Cross River","Odukpani",0,NA,NA
+"NGA.9.16_1","Cross River","Ogoja",1,1,2024
+"NGA.9.17_1","Cross River","Yakurr",0,NA,NA
+"NGA.9.18_1","Cross River","Yala",1,3,2024
+"NGA.10.1_1","Delta","Aniocha North",0,NA,NA
+"NGA.10.2_1","Delta","Aniocha South",1,1,2018
+"NGA.10.3_1","Delta","Bomadi",0,NA,NA
+"NGA.10.4_1","Delta","Burutu",0,NA,NA
+"NGA.10.6_1","Delta","Ethiope East",0,NA,NA
+"NGA.10.5_1","Delta","Ethiope West",0,NA,NA
+"NGA.10.7_1","Delta","Ika North-East",0,NA,NA
+"NGA.10.8_1","Delta","Ika South",1,2,2022
+"NGA.10.9_1","Delta","Isoko North",1,1,2020
+"NGA.10.10_1","Delta","Isoko South",0,NA,NA
+"NGA.10.11_1","Delta","Ndokwa East",1,2,2024
+"NGA.10.12_1","Delta","Ndokwa West",0,NA,NA
+"NGA.10.13_1","Delta","Okpe",1,1,2024
+"NGA.10.14_1","Delta","Oshimili North",1,2,2024
+"NGA.10.15_1","Delta","Oshimili South",1,6,2024
+"NGA.10.16_1","Delta","Patani",1,1,2020
+"NGA.10.17_1","Delta","Sapele",0,NA,NA
+"NGA.10.18_1","Delta","Udu",0,NA,NA
+"NGA.10.19_1","Delta","Ughelli North",1,1,2023
+"NGA.10.20_1","Delta","Ughelli South",0,NA,NA
+"NGA.10.21_1","Delta","Ukwuani",1,1,2022
+"NGA.10.22_1","Delta","Uvwie",0,NA,NA
+"NGA.10.23_1","Delta","Warri North",1,1,2020
+"NGA.10.24_1","Delta","Warri South",1,1,2020
+"NGA.10.25_1","Delta","Warri South-West",0,NA,NA
+"NGA.11.1_1","Ebonyi","Abakaliki",1,7,2024
+"NGA.11.2_1","Ebonyi","Afikpo North",1,4,2021
+"NGA.11.3_1","Ebonyi","Afikpo South",1,2,2023
+"NGA.11.4_1","Ebonyi","Ebonyi",1,7,2024
+"NGA.11.5_1","Ebonyi","Ezza North",1,7,2024
+"NGA.11.6_1","Ebonyi","Ezza South",1,7,2024
+"NGA.11.7_1","Ebonyi","Ikwo",1,6,2024
+"NGA.11.8_1","Ebonyi","Ishielu",1,4,2023
+"NGA.11.9_1","Ebonyi","Ivo",0,NA,NA
+"NGA.11.10_1","Ebonyi","Izzi",1,7,2024
+"NGA.11.11_1","Ebonyi","Ohaozara",1,5,2023
+"NGA.11.12_1","Ebonyi","Ohaukwu",1,6,2024
+"NGA.11.13_1","Ebonyi","Onicha",1,4,2024
+"NGA.12.1_1","Edo","Akoko-Edo",1,4,2023
+"NGA.12.2_1","Edo","Egor",1,3,2024
+"NGA.12.3_1","Edo","Esan Central",1,7,2024
+"NGA.12.4_1","Edo","Esan North-East",1,5,2022
+"NGA.12.5_1","Edo","Esan South-East",1,7,2024
+"NGA.12.6_1","Edo","Esan West",1,6,2024
+"NGA.12.7_1","Edo","Etsako Central",1,7,2024
+"NGA.12.8_1","Edo","Etsako East",1,7,2024
+"NGA.12.9_1","Edo","Etsako West",1,7,2024
+"NGA.12.10_1","Edo","Igueben",1,4,2022
+"NGA.12.11_1","Edo","Ikpoba-Okha",1,3,2021
+"NGA.12.12_1","Edo","Oredo",1,6,2024
+"NGA.12.13_1","Edo","Orhionmwon",0,NA,NA
+"NGA.12.14_1","Edo","Ovia North-East",1,7,2024
+"NGA.12.15_1","Edo","Ovia South-West",1,1,2019
+"NGA.12.16_1","Edo","Owan East",1,6,2024
+"NGA.12.17_1","Edo","Owan West",1,6,2024
+"NGA.12.18_1","Edo","Uhunmwonde",1,4,2024
+"NGA.13.1_1","Ekiti","Ado-Ekiti",1,1,2018
+"NGA.13.2_1","Ekiti","Efon",0,NA,NA
+"NGA.13.3_1","Ekiti","Ekiti East",0,NA,NA
+"NGA.13.4_1","Ekiti","Ekiti South-West",0,NA,NA
+"NGA.13.5_1","Ekiti","Ekiti West",0,NA,NA
+"NGA.13.6_1","Ekiti","Emure/Ise/Orun",0,NA,NA
+"NGA.13.7_1","Ekiti","Gboyin",0,NA,NA
+"NGA.13.8_1","Ekiti","Ido-Osi",0,NA,NA
+"NGA.13.9_1","Ekiti","Ijero",0,NA,NA
+"NGA.13.10_1","Ekiti","Ikere",0,NA,NA
+"NGA.13.11_1","Ekiti","Ikole",0,NA,NA
+"NGA.13.12_1","Ekiti","Ilejemeje",0,NA,NA
+"NGA.13.13_1","Ekiti","Irepodun/Ifelodun",0,NA,NA
+"NGA.13.14_1","Ekiti","Ise/Orun",0,NA,NA
+"NGA.13.15_1","Ekiti","Moba",0,NA,NA
+"NGA.13.16_1","Ekiti","Oye",0,NA,NA
+"NGA.14.1_1","Enugu","Aninri",1,1,2024
+"NGA.14.2_1","Enugu","Awgu",0,NA,NA
+"NGA.14.3_1","Enugu","Enugu East",1,2,2020
+"NGA.14.4_1","Enugu","Enugu North",1,1,2024
+"NGA.14.5_1","Enugu","Enugu South",0,NA,NA
+"NGA.14.6_1","Enugu","Ezeagu",0,NA,NA
+"NGA.14.7_1","Enugu","Igbo-Etiti",0,NA,NA
+"NGA.14.8_1","Enugu","Igbo-eze North",0,NA,NA
+"NGA.14.9_1","Enugu","Igbo-eze South",0,NA,NA
+"NGA.14.10_1","Enugu","Isi-Uzo",1,1,2022
+"NGA.14.11_1","Enugu","Nkanu East",1,3,2024
+"NGA.14.12_1","Enugu","Nkanu West",1,1,2020
+"NGA.14.13_1","Enugu","Nsukka",1,1,2024
+"NGA.14.14_1","Enugu","Oji-River",0,NA,NA
+"NGA.14.15_1","Enugu","Udenu",0,NA,NA
+"NGA.14.16_1","Enugu","Udi",0,NA,NA
+"NGA.14.17_1","Enugu","Uzo-Uwani",1,4,2024
+"NGA.15.1_1","Federal Capital Territory","Abaji",0,NA,NA
+"NGA.15.2_1","Federal Capital Territory","Abuja",1,3,2021
+"NGA.15.3_1","Federal Capital Territory","Bwari",1,4,2024
+"NGA.15.4_1","Federal Capital Territory","Gwagwalada",1,1,2024
+"NGA.15.5_1","Federal Capital Territory","Kuje",0,NA,NA
+"NGA.15.6_1","Federal Capital Territory","Kwali",0,NA,NA
+"NGA.16.1_1","Gombe","Akko",1,5,2024
+"NGA.16.2_1","Gombe","Balanga",1,4,2024
+"NGA.16.3_1","Gombe","Billiri",0,NA,NA
+"NGA.16.4_1","Gombe","Dukku",1,1,2024
+"NGA.16.5_1","Gombe","Funakaye",0,NA,NA
+"NGA.16.6_1","Gombe","Gombe",1,3,2024
+"NGA.16.7_1","Gombe","Kaltungo",1,3,2023
+"NGA.16.8_1","Gombe","Kwami",1,2,2024
+"NGA.16.9_1","Gombe","Nafada",0,NA,NA
+"NGA.16.10_1","Gombe","Shomgom",0,NA,NA
+"NGA.16.11_1","Gombe","Yamaltu/Deba",1,2,2024
+"NGA.17.1_1","Imo","Aboh-Mbaise",0,NA,NA
+"NGA.17.2_1","Imo","Ahiazu-Mbaise",1,1,2018
+"NGA.17.3_1","Imo","Ehime-Mbano",1,1,2018
+"NGA.17.4_1","Imo","Ezinihitte Mbaise",0,NA,NA
+"NGA.17.6_1","Imo","Ideato North",0,NA,NA
+"NGA.17.5_1","Imo","Ideato South",0,NA,NA
+"NGA.17.7_1","Imo","Ihitte/Uboma",0,NA,NA
+"NGA.17.8_1","Imo","Ikeduru",0,NA,NA
+"NGA.17.9_1","Imo","Isiala Mbano",0,NA,NA
+"NGA.17.10_1","Imo","Isu",0,NA,NA
+"NGA.17.11_1","Imo","Mbatoli",0,NA,NA
+"NGA.17.12_1","Imo","Ngor-Okpala",1,1,2022
+"NGA.17.13_1","Imo","Njaba",0,NA,NA
+"NGA.17.14_1","Imo","Nkwerre",0,NA,NA
+"NGA.17.15_1","Imo","Nwangele",0,NA,NA
+"NGA.17.16_1","Imo","Obowo",0,NA,NA
+"NGA.17.17_1","Imo","Oguta",0,NA,NA
+"NGA.17.18_1","Imo","Ohaji/Egbema",1,1,2019
+"NGA.17.19_1","Imo","Okigwe",1,1,2018
+"NGA.17.20_1","Imo","Orlu",1,1,2018
+"NGA.17.21_1","Imo","Orsu",0,NA,NA
+"NGA.17.22_1","Imo","Oru East",0,NA,NA
+"NGA.17.23_1","Imo","Oru West",0,NA,NA
+"NGA.17.24_1","Imo","Owerri Municipal",1,1,2021
+"NGA.17.25_1","Imo","Owerri North",1,1,2024
+"NGA.17.26_1","Imo","Owerri West",1,2,2024
+"NGA.17.27_1","Imo","Unuimo",0,NA,NA
+"NGA.18.1_1","Jigawa","Auyo",0,NA,NA
+"NGA.18.2_1","Jigawa","Babura",0,NA,NA
+"NGA.18.3_1","Jigawa","Biriniwa",0,NA,NA
+"NGA.18.4_1","Jigawa","Birnin Kudu",0,NA,NA
+"NGA.18.5_1","Jigawa","Buji",0,NA,NA
+"NGA.18.6_1","Jigawa","Dutse",1,1,2023
+"NGA.18.7_1","Jigawa","Gagarawa",0,NA,NA
+"NGA.18.8_1","Jigawa","Garki",0,NA,NA
+"NGA.18.9_1","Jigawa","Gumel",0,NA,NA
+"NGA.18.10_1","Jigawa","Guri",0,NA,NA
+"NGA.18.11_1","Jigawa","Gwaram",0,NA,NA
+"NGA.18.12_1","Jigawa","Gwiwa",1,1,2024
+"NGA.18.13_1","Jigawa","Hadejia",0,NA,NA
+"NGA.18.14_1","Jigawa","Jahun",0,NA,NA
+"NGA.18.15_1","Jigawa","Kafin Hausa",0,NA,NA
+"NGA.18.16_1","Jigawa","Kaugama",0,NA,NA
+"NGA.18.17_1","Jigawa","Kazaure",0,NA,NA
+"NGA.18.18_1","Jigawa","Kiri Kasama",0,NA,NA
+"NGA.18.19_1","Jigawa","Kiyawa",0,NA,NA
+"NGA.18.20_1","Jigawa","Maigatari",0,NA,NA
+"NGA.18.21_1","Jigawa","Malam Maduri",0,NA,NA
+"NGA.18.22_1","Jigawa","Miga",0,NA,NA
+"NGA.18.23_1","Jigawa","Ringim",0,NA,NA
+"NGA.18.24_1","Jigawa","Roni",0,NA,NA
+"NGA.18.25_1","Jigawa","Sule Tankarkar",0,NA,NA
+"NGA.18.26_1","Jigawa","Taura",0,NA,NA
+"NGA.18.27_1","Jigawa","Yankwashi",0,NA,NA
+"NGA.19.1_1","Kaduna","Birnin Gwari",0,NA,NA
+"NGA.19.2_1","Kaduna","Chikun",1,2,2020
+"NGA.19.3_1","Kaduna","Giwa",1,3,2022
+"NGA.19.4_1","Kaduna","Igabi",1,1,2019
+"NGA.19.5_1","Kaduna","Ikara",0,NA,NA
+"NGA.19.6_1","Kaduna","Jaba",0,NA,NA
+"NGA.19.7_1","Kaduna","Jema'a",1,1,2019
+"NGA.19.8_1","Kaduna","Kachia",1,1,2019
+"NGA.19.9_1","Kaduna","Kaduna North",1,2,2022
+"NGA.19.10_1","Kaduna","Kaduna South",1,2,2022
+"NGA.19.11_1","Kaduna","Kagarko",0,NA,NA
+"NGA.19.12_1","Kaduna","Kajuru",0,NA,NA
+"NGA.19.13_1","Kaduna","Kaura",0,NA,NA
+"NGA.19.14_1","Kaduna","Kauru",0,NA,NA
+"NGA.19.15_1","Kaduna","Kubau",0,NA,NA
+"NGA.19.16_1","Kaduna","Kudan",1,2,2020
+"NGA.19.17_1","Kaduna","Lere",1,1,2020
+"NGA.19.18_1","Kaduna","Makarfi",1,1,2021
+"NGA.19.19_1","Kaduna","Sabon Gari",1,1,2020
+"NGA.19.20_1","Kaduna","Sanga",0,NA,NA
+"NGA.19.21_1","Kaduna","Soba",0,NA,NA
+"NGA.19.22_1","Kaduna","Zangon Kataf",0,NA,NA
+"NGA.19.23_1","Kaduna","Zaria",1,3,2024
+"NGA.20.1_1","Kano","Ajingi",0,NA,NA
+"NGA.20.2_1","Kano","Albasu",0,NA,NA
+"NGA.20.3_1","Kano","Bagwai",0,NA,NA
+"NGA.20.4_1","Kano","Bebeji",0,NA,NA
+"NGA.20.5_1","Kano","Bichi",0,NA,NA
+"NGA.20.6_1","Kano","Bunkure",1,1,2020
+"NGA.20.7_1","Kano","Dala",1,1,2023
+"NGA.20.8_1","Kano","Dambatta",0,NA,NA
+"NGA.20.9_1","Kano","Dawakin Kudu",0,NA,NA
+"NGA.20.10_1","Kano","Dawakin Tofa",0,NA,NA
+"NGA.20.11_1","Kano","Doguwa",1,1,2023
+"NGA.20.12_1","Kano","Fagge",0,NA,NA
+"NGA.20.13_1","Kano","Gabasawa",0,NA,NA
+"NGA.20.14_1","Kano","Garko",0,NA,NA
+"NGA.20.15_1","Kano","Garum Mallam",0,NA,NA
+"NGA.20.16_1","Kano","Gaya",0,NA,NA
+"NGA.20.17_1","Kano","Gezawa",1,1,2024
+"NGA.20.18_1","Kano","Gwale",0,NA,NA
+"NGA.20.19_1","Kano","Gwarzo",1,1,2020
+"NGA.20.20_1","Kano","Kabo",0,NA,NA
+"NGA.20.21_1","Kano","Kano",0,NA,NA
+"NGA.20.22_1","Kano","Karaye",0,NA,NA
+"NGA.20.23_1","Kano","Kibiya",0,NA,NA
+"NGA.20.24_1","Kano","Kiru",0,NA,NA
+"NGA.20.25_1","Kano","Kumbotso",1,1,2020
+"NGA.20.26_1","Kano","Kunchi",0,NA,NA
+"NGA.20.27_1","Kano","Kura",0,NA,NA
+"NGA.20.28_1","Kano","Madobi",0,NA,NA
+"NGA.20.29_1","Kano","Makoda",0,NA,NA
+"NGA.20.30_1","Kano","Minjibir",0,NA,NA
+"NGA.20.31_1","Kano","Nasarawa",0,NA,NA
+"NGA.20.32_1","Kano","Rano",0,NA,NA
+"NGA.20.33_1","Kano","Rimin Gado",0,NA,NA
+"NGA.20.34_1","Kano","Rogo",1,1,2023
+"NGA.20.35_1","Kano","Shanono",0,NA,NA
+"NGA.20.36_1","Kano","Sumaila",0,NA,NA
+"NGA.20.37_1","Kano","Takai",0,NA,NA
+"NGA.20.38_1","Kano","Tarauni",0,NA,NA
+"NGA.20.39_1","Kano","Tofa",0,NA,NA
+"NGA.20.40_1","Kano","Tsanyawa",0,NA,NA
+"NGA.20.41_1","Kano","Tudun Wada",1,1,2023
+"NGA.20.42_1","Kano","Ungogo",0,NA,NA
+"NGA.20.43_1","Kano","Warawa",0,NA,NA
+"NGA.20.44_1","Kano","Wudil",0,NA,NA
+"NGA.21.1_1","Katsina","Bakori",0,NA,NA
+"NGA.21.2_1","Katsina","Batagarawa",0,NA,NA
+"NGA.21.3_1","Katsina","Batsari",1,1,2024
+"NGA.21.4_1","Katsina","Baure",0,NA,NA
+"NGA.21.5_1","Katsina","Bindawa",0,NA,NA
+"NGA.21.6_1","Katsina","Charanchi",0,NA,NA
+"NGA.21.7_1","Katsina","Dandume",0,NA,NA
+"NGA.21.8_1","Katsina","Danja",1,1,2022
+"NGA.21.9_1","Katsina","Danmusa",0,NA,NA
+"NGA.21.10_1","Katsina","Daura",0,NA,NA
+"NGA.21.11_1","Katsina","Dutsi",0,NA,NA
+"NGA.21.12_1","Katsina","Dutsinma",0,NA,NA
+"NGA.21.13_1","Katsina","Faskari",0,NA,NA
+"NGA.21.14_1","Katsina","Funtua",0,NA,NA
+"NGA.21.15_1","Katsina","Ingawa",0,NA,NA
+"NGA.21.16_1","Katsina","Jibia",0,NA,NA
+"NGA.21.17_1","Katsina","Kafur",0,NA,NA
+"NGA.21.18_1","Katsina","Kaita",0,NA,NA
+"NGA.21.19_1","Katsina","Kankara",0,NA,NA
+"NGA.21.20_1","Katsina","Kankia",0,NA,NA
+"NGA.21.21_1","Katsina","Katsina",0,NA,NA
+"NGA.21.22_1","Katsina","Kurfi",0,NA,NA
+"NGA.21.23_1","Katsina","Kusada",1,1,2020
+"NGA.21.24_1","Katsina","Mai'Adua",0,NA,NA
+"NGA.21.25_1","Katsina","Malumfashi",0,NA,NA
+"NGA.21.26_1","Katsina","Mani",0,NA,NA
+"NGA.21.27_1","Katsina","Mashi",0,NA,NA
+"NGA.21.28_1","Katsina","Matazu",0,NA,NA
+"NGA.21.29_1","Katsina","Musawa",0,NA,NA
+"NGA.21.30_1","Katsina","Rimi",0,NA,NA
+"NGA.21.31_1","Katsina","Sabuwa",0,NA,NA
+"NGA.21.32_1","Katsina","Safana",0,NA,NA
+"NGA.21.33_1","Katsina","Sandamu",0,NA,NA
+"NGA.21.34_1","Katsina","Zango",0,NA,NA
+"NGA.22.1_1","Kebbi","Aleiro",0,NA,NA
+"NGA.22.2_1","Kebbi","Arewa Dandi",0,NA,NA
+"NGA.22.3_1","Kebbi","Argungu",0,NA,NA
+"NGA.22.4_1","Kebbi","Augie",0,NA,NA
+"NGA.22.5_1","Kebbi","Bagudo",0,NA,NA
+"NGA.22.6_1","Kebbi","Birnin Kebbi",1,2,2020
+"NGA.22.7_1","Kebbi","Bunza",1,1,2019
+"NGA.22.8_1","Kebbi","Dandi",0,NA,NA
+"NGA.22.9_1","Kebbi","Danko Wasagu",0,NA,NA
+"NGA.22.10_1","Kebbi","Fakai",0,NA,NA
+"NGA.22.11_1","Kebbi","Gwandu",0,NA,NA
+"NGA.22.12_1","Kebbi","Jega",1,2,2022
+"NGA.22.13_1","Kebbi","Kalgo",1,1,2020
+"NGA.22.14_1","Kebbi","Koko/Besse",0,NA,NA
+"NGA.22.15_1","Kebbi","Maiyama",0,NA,NA
+"NGA.22.16_1","Kebbi","Ngaski",0,NA,NA
+"NGA.22.17_1","Kebbi","Sakaba",0,NA,NA
+"NGA.22.18_1","Kebbi","Shanga",0,NA,NA
+"NGA.22.19_1","Kebbi","Suru",0,NA,NA
+"NGA.22.20_1","Kebbi","Yauri",1,1,2023
+"NGA.22.21_1","Kebbi","Zuru",1,1,2019
+"NGA.23.1_1","Kogi","Adavi",1,2,2022
+"NGA.23.2_1","Kogi","Ajaokuta",1,6,2024
+"NGA.23.3_1","Kogi","Ankpa",0,NA,NA
+"NGA.23.4_1","Kogi","Bassa",1,4,2024
+"NGA.23.5_1","Kogi","Dekina",1,3,2024
+"NGA.23.6_1","Kogi","Ibaji",1,5,2024
+"NGA.23.7_1","Kogi","Idah",1,3,2023
+"NGA.23.8_1","Kogi","Igalamela-Odolu",1,2,2022
+"NGA.23.9_1","Kogi","Ijumu",1,1,2019
+"NGA.23.10_1","Kogi","Kabba/Bunu",1,2,2024
+"NGA.23.11_1","Kogi","Kogi",0,NA,NA
+"NGA.23.12_1","Kogi","Lokoja",1,5,2024
+"NGA.23.13_1","Kogi","Mopa-Muro",1,1,2023
+"NGA.23.14_1","Kogi","Ofu",1,4,2024
+"NGA.23.15_1","Kogi","Ogori/Magongo",1,1,2020
+"NGA.23.16_1","Kogi","Okehi",1,3,2024
+"NGA.23.17_1","Kogi","Okene",1,3,2022
+"NGA.23.18_1","Kogi","Olamaboro",0,NA,NA
+"NGA.23.19_1","Kogi","Omala",1,1,2024
+"NGA.23.20_1","Kogi","Yagba East",0,NA,NA
+"NGA.23.21_1","Kogi","Yagba West",0,NA,NA
+"NGA.24.1_1","Kwara","Asa",0,NA,NA
+"NGA.24.2_1","Kwara","Baruten",1,1,2019
+"NGA.24.3_1","Kwara","Edu",0,NA,NA
+"NGA.24.4_1","Kwara","Ekiti",0,NA,NA
+"NGA.24.5_1","Kwara","Ifelodun",0,NA,NA
+"NGA.24.6_1","Kwara","Ilorin East",0,NA,NA
+"NGA.24.7_1","Kwara","Ilorin South",0,NA,NA
+"NGA.24.8_1","Kwara","Ilorin West",0,NA,NA
+"NGA.24.9_1","Kwara","Irepodun",0,NA,NA
+"NGA.24.10_1","Kwara","Isin",0,NA,NA
+"NGA.24.11_1","Kwara","Kaiama",0,NA,NA
+"NGA.24.12_1","Kwara","Moro",0,NA,NA
+"NGA.24.13_1","Kwara","Offa",0,NA,NA
+"NGA.24.14_1","Kwara","Oke-Ero",0,NA,NA
+"NGA.24.15_1","Kwara","Oyun",0,NA,NA
+"NGA.24.16_1","Kwara","Pategi",0,NA,NA
+"NGA.25.1_1","Lagos","Agege",0,NA,NA
+"NGA.25.2_1","Lagos","Ajeromi/Ifelodun",0,NA,NA
+"NGA.25.3_1","Lagos","Alimosho",1,1,2018
+"NGA.25.4_1","Lagos","Amuwo Odofin",0,NA,NA
+"NGA.25.5_1","Lagos","Apapa",0,NA,NA
+"NGA.25.6_1","Lagos","Badagry",0,NA,NA
+"NGA.25.7_1","Lagos","Epe",0,NA,NA
+"NGA.25.8_1","Lagos","Eti-Osa",0,NA,NA
+"NGA.25.9_1","Lagos","Ibeju-Lekki",0,NA,NA
+"NGA.25.10_1","Lagos","Ifako/Ijaye",0,NA,NA
+"NGA.25.11_1","Lagos","Ikeja",0,NA,NA
+"NGA.25.12_1","Lagos","Ikorodu",1,1,2019
+"NGA.25.13_1","Lagos","Kosofe",1,1,2024
+"NGA.25.14_1","Lagos","Lagos Island",0,NA,NA
+"NGA.25.15_1","Lagos","Mainland",0,NA,NA
+"NGA.25.16_1","Lagos","Mushin",0,NA,NA
+"NGA.25.17_1","Lagos","Ojo",0,NA,NA
+"NGA.25.18_1","Lagos","Oshodi/Isolo",0,NA,NA
+"NGA.25.19_1","Lagos","Shomolu",0,NA,NA
+"NGA.25.20_1","Lagos","Surulere",0,NA,NA
+"NGA.26.1_1","Nasarawa","Akwanga",1,2,2024
+"NGA.26.2_1","Nasarawa","Awe",1,1,2023
+"NGA.26.3_1","Nasarawa","Doma",0,NA,NA
+"NGA.26.4_1","Nasarawa","Karu",1,3,2024
+"NGA.26.5_1","Nasarawa","Keana",1,1,2023
+"NGA.26.6_1","Nasarawa","Keffi",1,2,2022
+"NGA.26.7_1","Nasarawa","Kokona",0,NA,NA
+"NGA.26.8_1","Nasarawa","Lafia",1,7,2024
+"NGA.26.9_1","Nasarawa","Nasarawa",1,1,2019
+"NGA.26.10_1","Nasarawa","Nasarawa Eggon",1,1,2019
+"NGA.26.11_1","Nasarawa","Obi",1,2,2024
+"NGA.26.12_1","Nasarawa","Toto",0,NA,NA
+"NGA.26.13_1","Nasarawa","Wamba",0,NA,NA
+"NGA.27.1_1","Niger","Agaie",0,NA,NA
+"NGA.27.2_1","Niger","Agwara",0,NA,NA
+"NGA.27.3_1","Niger","Bida",0,NA,NA
+"NGA.27.4_1","Niger","Borgu",0,NA,NA
+"NGA.27.5_1","Niger","Bosso",0,NA,NA
+"NGA.27.6_1","Niger","Chanchaga",0,NA,NA
+"NGA.27.7_1","Niger","Edati",0,NA,NA
+"NGA.27.8_1","Niger","Gbako",0,NA,NA
+"NGA.27.9_1","Niger","Gurara",0,NA,NA
+"NGA.27.10_1","Niger","Katcha",1,1,2022
+"NGA.27.11_1","Niger","Kontagora",0,NA,NA
+"NGA.27.12_1","Niger","Lapai",0,NA,NA
+"NGA.27.13_1","Niger","Lavun",0,NA,NA
+"NGA.27.14_1","Niger","Magama",0,NA,NA
+"NGA.27.15_1","Niger","Mariga",0,NA,NA
+"NGA.27.16_1","Niger","Mashegu",0,NA,NA
+"NGA.27.17_1","Niger","Mokwa",0,NA,NA
+"NGA.27.18_1","Niger","Muya",0,NA,NA
+"NGA.27.19_1","Niger","Paikoro",0,NA,NA
+"NGA.27.20_1","Niger","Rafi",0,NA,NA
+"NGA.27.21_1","Niger","Rijau",0,NA,NA
+"NGA.27.22_1","Niger","Shiroro",0,NA,NA
+"NGA.27.23_1","Niger","Suleja",1,1,2024
+"NGA.27.24_1","Niger","Tafa",1,1,2023
+"NGA.27.25_1","Niger","Wushishi",0,NA,NA
+"NGA.28.2_1","Ogun","Abeokuta North",0,NA,NA
+"NGA.28.1_1","Ogun","Abeokuta South",1,1,2020
+"NGA.28.3_1","Ogun","Ado Odo/Ota",0,NA,NA
+"NGA.28.6_1","Ogun","Ewekoro",0,NA,NA
+"NGA.28.7_1","Ogun","Ifo",0,NA,NA
+"NGA.28.11_1","Ogun","Ijebu-Ode",0,NA,NA
+"NGA.28.9_1","Ogun","Ijebu East",0,NA,NA
+"NGA.28.10_1","Ogun","Ijebu North",0,NA,NA
+"NGA.28.8_1","Ogun","Ijebu North-East",0,NA,NA
+"NGA.28.12_1","Ogun","Ikenne",0,NA,NA
+"NGA.28.13_1","Ogun","Imeko-Afon",0,NA,NA
+"NGA.28.14_1","Ogun","Ipokia",0,NA,NA
+"NGA.28.15_1","Ogun","Obafemi-Owode",0,NA,NA
+"NGA.28.16_1","Ogun","Odeda",0,NA,NA
+"NGA.28.17_1","Ogun","Odogbolu",0,NA,NA
+"NGA.28.18_1","Ogun","Ogun Waterside",0,NA,NA
+"NGA.28.19_1","Ogun","Remo-North",0,NA,NA
+"NGA.28.20_1","Ogun","Shagamu",1,1,2024
+"NGA.28.4_1","Ogun","Yewa North",0,NA,NA
+"NGA.28.5_1","Ogun","Yewa South",0,NA,NA
+"NGA.29.1_1","Ondo","Akoko North-East",1,4,2024
+"NGA.29.4_1","Ondo","Akoko North-West",1,4,2024
+"NGA.29.2_1","Ondo","Akoko South-East",1,2,2024
+"NGA.29.3_1","Ondo","Akoko South-West",1,6,2024
+"NGA.29.5_1","Ondo","Akure North",1,7,2024
+"NGA.29.6_1","Ondo","Akure South",1,7,2024
+"NGA.29.7_1","Ondo","Ese-Odo",0,NA,NA
+"NGA.29.8_1","Ondo","Idanre",1,5,2024
+"NGA.29.9_1","Ondo","Ifedore",1,4,2024
+"NGA.29.10_1","Ondo","Ilaje",1,1,2020
+"NGA.29.11_1","Ondo","Ile-Oluji/Okeigbo",0,NA,NA
+"NGA.29.12_1","Ondo","Irele",0,NA,NA
+"NGA.29.13_1","Ondo","Odigbo",1,2,2021
+"NGA.29.14_1","Ondo","Okitipupa",1,2,2024
+"NGA.29.15_1","Ondo","Ondo East",1,1,2024
+"NGA.29.16_1","Ondo","Ondo West",1,3,2024
+"NGA.29.17_1","Ondo","Ose",1,7,2024
+"NGA.29.18_1","Ondo","Owo",1,7,2024
+"NGA.30.3_1","Osun","Aiyedade",0,NA,NA
+"NGA.30.1_1","Osun","Atakumosa East",0,NA,NA
+"NGA.30.2_1","Osun","Atakumosa West",0,NA,NA
+"NGA.30.4_1","Osun","Ayedire",0,NA,NA
+"NGA.30.5_1","Osun","Boluwaduro",0,NA,NA
+"NGA.30.6_1","Osun","Boripe",0,NA,NA
+"NGA.30.7_1","Osun","Ede North",0,NA,NA
+"NGA.30.8_1","Osun","Ede South",1,1,2018
+"NGA.30.9_1","Osun","Egbedore",0,NA,NA
+"NGA.30.10_1","Osun","Ejigbo",0,NA,NA
+"NGA.30.14_1","Osun","Ife Central",0,NA,NA
+"NGA.30.11_1","Osun","Ife East",0,NA,NA
+"NGA.30.12_1","Osun","Ife North",0,NA,NA
+"NGA.30.13_1","Osun","Ife South",0,NA,NA
+"NGA.30.15_1","Osun","Ifedayo",0,NA,NA
+"NGA.30.16_1","Osun","Ifelodun",0,NA,NA
+"NGA.30.17_1","Osun","Ila",0,NA,NA
+"NGA.30.18_1","Osun","Ilesha East",0,NA,NA
+"NGA.30.19_1","Osun","Ilesha West",0,NA,NA
+"NGA.30.20_1","Osun","Irepodun",0,NA,NA
+"NGA.30.21_1","Osun","Irewole",1,1,2020
+"NGA.30.22_1","Osun","Isokan",0,NA,NA
+"NGA.30.23_1","Osun","Iwo",0,NA,NA
+"NGA.30.24_1","Osun","Obokun",0,NA,NA
+"NGA.30.25_1","Osun","Odo-Otin",0,NA,NA
+"NGA.30.26_1","Osun","Ola Oluwa",0,NA,NA
+"NGA.30.27_1","Osun","Olorunda",0,NA,NA
+"NGA.30.28_1","Osun","Oriade",0,NA,NA
+"NGA.30.29_1","Osun","Orolu",0,NA,NA
+"NGA.30.30_1","Osun","Osogbo",0,NA,NA
+"NGA.31.1_1","Oyo","Afijio",0,NA,NA
+"NGA.31.2_1","Oyo","Akinyele",1,1,2022
+"NGA.31.3_1","Oyo","Atiba",0,NA,NA
+"NGA.31.4_1","Oyo","Atisbo",0,NA,NA
+"NGA.31.5_1","Oyo","Egbeda",1,1,2020
+"NGA.31.6_1","Oyo","Ibadan North",1,1,2022
+"NGA.31.7_1","Oyo","Ibadan North-East",0,NA,NA
+"NGA.31.8_1","Oyo","Ibadan North-West",1,1,2022
+"NGA.31.9_1","Oyo","Ibadan South-East",0,NA,NA
+"NGA.31.10_1","Oyo","Ibadan South-West",0,NA,NA
+"NGA.31.11_1","Oyo","Ibarapa Central",0,NA,NA
+"NGA.31.12_1","Oyo","Ibarapa East",0,NA,NA
+"NGA.31.13_1","Oyo","Ibarapa North",0,NA,NA
+"NGA.31.14_1","Oyo","Ido",0,NA,NA
+"NGA.31.15_1","Oyo","Irepo",0,NA,NA
+"NGA.31.16_1","Oyo","Iseyin",1,1,2019
+"NGA.31.17_1","Oyo","Itesiwaju",0,NA,NA
+"NGA.31.18_1","Oyo","Iwajowa",1,2,2023
+"NGA.31.19_1","Oyo","Kajola",1,1,2022
+"NGA.31.20_1","Oyo","Lagelu",0,NA,NA
+"NGA.31.21_1","Oyo","Ogbomosho North",0,NA,NA
+"NGA.31.22_1","Oyo","Ogbomosho South",1,1,2022
+"NGA.31.23_1","Oyo","Ogo Oluwa",0,NA,NA
+"NGA.31.24_1","Oyo","Olorunsogo",0,NA,NA
+"NGA.31.25_1","Oyo","Oluyole",1,1,2022
+"NGA.31.26_1","Oyo","Ona Ara",0,NA,NA
+"NGA.31.27_1","Oyo","Orelope",1,1,2022
+"NGA.31.28_1","Oyo","Ori-Ire",0,NA,NA
+"NGA.31.29_1","Oyo","Oyo East",1,1,2021
+"NGA.31.30_1","Oyo","Oyo West",1,1,2023
+"NGA.31.31_1","Oyo","Saki East",0,NA,NA
+"NGA.31.32_1","Oyo","Saki West",0,NA,NA
+"NGA.31.33_1","Oyo","Surulere",0,NA,NA
+"NGA.32.1_1","Plateau","Barkin Ladi",1,2,2024
+"NGA.32.2_1","Plateau","Bassa",1,4,2024
+"NGA.32.3_1","Plateau","Bokkos",1,5,2022
+"NGA.32.4_1","Plateau","Jos East",1,3,2024
+"NGA.32.5_1","Plateau","Jos North",1,7,2024
+"NGA.32.6_1","Plateau","Jos South",1,5,2024
+"NGA.32.7_1","Plateau","Kanam",1,5,2024
+"NGA.32.8_1","Plateau","Kanke",0,NA,NA
+"NGA.32.9_1","Plateau","Langtang North",1,5,2022
+"NGA.32.10_1","Plateau","Langtang South",1,1,2018
+"NGA.32.11_1","Plateau","Mangu",1,4,2024
+"NGA.32.12_1","Plateau","Mikang",0,NA,NA
+"NGA.32.13_1","Plateau","Pankshin",1,1,2020
+"NGA.32.14_1","Plateau","Qua'an Pan",1,3,2022
+"NGA.32.15_1","Plateau","Riyom",1,2,2023
+"NGA.32.16_1","Plateau","Shendam",1,2,2023
+"NGA.32.17_1","Plateau","Wase",1,2,2024
+"NGA.33.1_1","Rivers","Abua/Odual",0,NA,NA
+"NGA.33.2_1","Rivers","Ahoada East",0,NA,NA
+"NGA.33.3_1","Rivers","Ahoada West",0,NA,NA
+"NGA.33.4_1","Rivers","Akuku-Toru",0,NA,NA
+"NGA.33.5_1","Rivers","Andoni",0,NA,NA
+"NGA.33.6_1","Rivers","Asari-Toru",0,NA,NA
+"NGA.33.7_1","Rivers","Bonny",0,NA,NA
+"NGA.33.8_1","Rivers","Degema",0,NA,NA
+"NGA.33.9_1","Rivers","Eleme",1,1,2020
+"NGA.33.10_1","Rivers","Emuoha",1,1,2020
+"NGA.33.11_1","Rivers","Etche",1,1,2020
+"NGA.33.12_1","Rivers","Gokana",0,NA,NA
+"NGA.33.13_1","Rivers","Ikwerre",1,3,2024
+"NGA.33.14_1","Rivers","Khana",0,NA,NA
+"NGA.33.15_1","Rivers","Obio/Akpor",1,5,2024
+"NGA.33.16_1","Rivers","Ogba/Egbema/Ndoni",0,NA,NA
+"NGA.33.17_1","Rivers","Ogu/Bolo",0,NA,NA
+"NGA.33.18_1","Rivers","Okrika",0,NA,NA
+"NGA.33.19_1","Rivers","Omumma",0,NA,NA
+"NGA.33.20_1","Rivers","Opobo/Nkoro",0,NA,NA
+"NGA.33.21_1","Rivers","Oyigbo",1,1,2019
+"NGA.33.22_1","Rivers","Port Harcourt",1,1,2018
+"NGA.33.23_1","Rivers","Tai",0,NA,NA
+"NGA.34.1_1","Sokoto","Binji",0,NA,NA
+"NGA.34.2_1","Sokoto","Bodinga",0,NA,NA
+"NGA.34.3_1","Sokoto","Dange-Shuni",0,NA,NA
+"NGA.34.4_1","Sokoto","Gada",0,NA,NA
+"NGA.34.5_1","Sokoto","Goronyo",0,NA,NA
+"NGA.34.6_1","Sokoto","Gudu",0,NA,NA
+"NGA.34.7_1","Sokoto","Gwadabawa",0,NA,NA
+"NGA.34.8_1","Sokoto","Illela",0,NA,NA
+"NGA.34.9_1","Sokoto","Isa",0,NA,NA
+"NGA.34.10_1","Sokoto","Kebbe",1,1,2020
+"NGA.34.11_1","Sokoto","Kware",0,NA,NA
+"NGA.34.12_1","Sokoto","Rabah",0,NA,NA
+"NGA.34.13_1","Sokoto","Sabon Birni",0,NA,NA
+"NGA.34.14_1","Sokoto","Shagari",0,NA,NA
+"NGA.34.15_1","Sokoto","Silame",0,NA,NA
+"NGA.34.16_1","Sokoto","Sokoto North",0,NA,NA
+"NGA.34.17_1","Sokoto","Sokoto South",0,NA,NA
+"NGA.34.18_1","Sokoto","Tambuwal",1,1,2020
+"NGA.34.19_1","Sokoto","Tangaza",0,NA,NA
+"NGA.34.20_1","Sokoto","Tureta",1,1,2023
+"NGA.34.21_1","Sokoto","Wamako",0,NA,NA
+"NGA.34.22_1","Sokoto","Wurno",0,NA,NA
+"NGA.34.23_1","Sokoto","Yabo",0,NA,NA
+"NGA.35.1_1","Taraba","Ardo-Kola",1,6,2024
+"NGA.35.2_1","Taraba","Bali",1,7,2024
+"NGA.35.3_1","Taraba","Donga",1,5,2023
+"NGA.35.4_1","Taraba","Gashaka",1,3,2024
+"NGA.35.5_1","Taraba","Gassol",1,7,2024
+"NGA.35.6_1","Taraba","Ibi",1,4,2024
+"NGA.35.7_1","Taraba","Jalingo",1,7,2024
+"NGA.35.8_1","Taraba","Karim Lamido",1,5,2024
+"NGA.35.9_1","Taraba","Kurmi",1,1,2024
+"NGA.35.10_1","Taraba","Lau",1,4,2024
+"NGA.35.11_1","Taraba","Sardauna",1,1,2024
+"NGA.35.12_1","Taraba","Takum",1,4,2024
+"NGA.35.13_1","Taraba","Ussa",1,4,2024
+"NGA.35.14_1","Taraba","Wukari",1,5,2024
+"NGA.35.15_1","Taraba","Yorro",1,2,2024
+"NGA.35.16_1","Taraba","Zing",1,2,2024
+"NGA.36.1_1","Yobe","Bade",0,NA,NA
+"NGA.36.2_1","Yobe","Borsari",0,NA,NA
+"NGA.36.3_1","Yobe","Damaturu",0,NA,NA
+"NGA.36.4_1","Yobe","Fika",0,NA,NA
+"NGA.36.5_1","Yobe","Fune",0,NA,NA
+"NGA.36.6_1","Yobe","Geidam",0,NA,NA
+"NGA.36.7_1","Yobe","Gujba",0,NA,NA
+"NGA.36.8_1","Yobe","Gulani",0,NA,NA
+"NGA.36.9_1","Yobe","Jakusko",0,NA,NA
+"NGA.36.10_1","Yobe","Karasuwa",0,NA,NA
+"NGA.36.11_1","Yobe","Machina",0,NA,NA
+"NGA.36.12_1","Yobe","Nangere",0,NA,NA
+"NGA.36.13_1","Yobe","Nguru",1,1,2024
+"NGA.36.14_1","Yobe","Potiskum",0,NA,NA
+"NGA.36.15_1","Yobe","Tarmuwa",0,NA,NA
+"NGA.36.16_1","Yobe","Yunusari",0,NA,NA
+"NGA.36.17_1","Yobe","Yusufari",0,NA,NA
+"NGA.37.1_1","Zamfara","Anka",1,1,2020
+"NGA.37.2_1","Zamfara","Bakura",0,NA,NA
+"NGA.37.3_1","Zamfara","Birnin-Magaji/Kiyaw",0,NA,NA
+"NGA.37.4_1","Zamfara","Bukkuyum",0,NA,NA
+"NGA.37.5_1","Zamfara","Bungudu",0,NA,NA
+"NGA.37.6_1","Zamfara","Gummi",1,1,2019
+"NGA.37.7_1","Zamfara","Gusau",0,NA,NA
+"NGA.37.8_1","Zamfara","Kaura Namoda",0,NA,NA
+"NGA.37.9_1","Zamfara","Maradun",0,NA,NA
+"NGA.37.10_1","Zamfara","Maru",0,NA,NA
+"NGA.37.11_1","Zamfara","Shinkafi",0,NA,NA
+"NGA.37.12_1","Zamfara","Talata-Mafara",0,NA,NA
+"NGA.37.13_1","Zamfara","Tsafe",0,NA,NA
+"NGA.37.14_1","Zamfara","Zurmi",1,1,2023
