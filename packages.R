@@ -11,6 +11,12 @@ library(sf)
 library(terra) # Efficient raster handling
 library(rgbif) # Access GBIF API
 library(coda) # MCMC
+library(dismo)
+library(gbm)
+library(mapview)
+library(lme4)
+library(pROC)
+library(mgcv)
 
 # Data Wrangling and Visualisation
 library(dplyr)
@@ -20,6 +26,13 @@ library(stringr)
 library(ggplot2)
 library(lubridate)
 library(tidyterra)
+library(bayesplot)
+library(corrplot)
+library(patchwork)
+library(ggrepel)
+library(forcats)
+library(rnaturalearth)
+library(ggrepel)
 
 # Mapping and Environmental Data
 library(geodata)
@@ -34,6 +47,9 @@ library(here) # File path management
 
 ## packages necessary for startup script
 library(usethis)
+
+# Writing
+library(gt)
 
 ## recommended
 # library(fnmate) # quickly create functions

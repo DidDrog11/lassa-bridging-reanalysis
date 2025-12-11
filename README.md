@@ -35,45 +35,10 @@ This project uses a provided template (VERERNA Consortium)[https://github.com/vi
 
 ***
 
-## Project Checklist: Lassa Spillover Reanalysis
-
-This checklist maps the required data and analysis steps to the project workflow.
-
-### Stage 1: Refined Host Ecological Modeling ($\boldsymbol{D_M}$)
-
-| Status | Component | Description & Key R Functions |
-| :---: | :--- | :--- |
-| $\square$ | **A. Data Aggregation & Cleaning** | Clean and format all occurrence/non-detection data for the target species, including "true absence"" points. |
-| $\square$ | **B. Site Master List & Covariates** | Create master site list and extract environmental predictors ($\boldsymbol{occ.covs}$) for all unique locations. |
-| $\square$ | **C. IMSOM Data Preparation** | Structure the data into the necessary input format for `intMsPGOcc()`: **Source 1 (Replicated Surveys)** and **Source 2 (Aggregated Data)** arrays, including linking indices (`sites`, `species`). |
-| $\square$ | **D. Benchmark JSDM (Model A)** | Run the **Hierarchical JSDM with Detection** on **Source 1** to establish a high-confidence baseline for parameter estimates. |
-| $\square$ | **E. Full Coverage JSDM (Model B)** | Run the **Integrated JSDM** (`intMsPGOcc()`) on **Sources 1 & 2 combined** to generate the full-coverage $\boldsymbol{D_M}$ layer. Use `n.omp.threads` for parallelisation. |
-| $\square$ | **F. Bias Assessment** | Quantify the consistency of $\boldsymbol{\psi}$ estimates and covariance ($\boldsymbol{\rho}_{ij}$) between Model A and Model B. |
-| $\square$ | **G. Final $\boldsymbol{D_M}$ Layer** | Generate the spatial raster map of predicted *M. natalensis* suitability based on the full integrated Model B. |
-
-### Stage 2: Epidemiological Integration and Incidence
-
-| Status | Component | Description & Data Source |
-| :---: | :--- | :--- |
-| $\square$ | **H. Pathogen Layer ($\boldsymbol{D_L}$)** | Reuse the original study's $\boldsymbol{D_L}$ predictions (LASV in rodents). |
-| $\square$ | **I. Composite Risk Layer ($\boldsymbol{D_X}$)** | Calculate the new combined risk: $\boldsymbol{D_X} = \boldsymbol{D_M} \times \boldsymbol{D_L}$. |
-| $\square$ | **J. Seroreversion Parameter ($\boldsymbol{\lambda}$)** | Search and incorporate the latest literature to define a more precise range or single value for $\boldsymbol{\lambda}_{new}$. |
-| $\square$ | **K. Seroprevalence Regression** | Re-run the Quasi-binomial Regression of human seroprevalence ($\boldsymbol{F}$) against the new $\boldsymbol{D_X}$ layer. |
-| $\square$ | **L. Incidence Calculation** | Apply the steady-state SIR framework (Equation 6) using $\boldsymbol{D_X}$ and $\boldsymbol{\lambda}_{new}$ to calculate the predicted annual human infection rate ($\boldsymbol{F S^*}$). |
-
-### Stage 3: Validation and Final Output
-
-| Status | Component | Description & Expected Finding |
-| :---: | :--- | :--- |
-| $\square$ | **M. Reported Case Data (H)** | **CRITICAL NEW DATA:** Gather and clean regional/national Lassa Fever case reports. |
-| $\square$ | **N. External Validation** | Compare the predicted infections ($\boldsymbol{F S^*}$) to the reported case data ($\boldsymbol{H}$). |
-| $\square$ | **O. Underreporting Hotspot Mapping** | Map the residuals (Predicted Infections - Reported Cases) to highlight areas of potential underreporting. |
-| $\square$ | **P. Final Results** | Summarize the revised range of annual LASV human infections and report on the ecological findings (species interaction effects). |
-
 ### Environmental Data
 
 | Predictor |	Description |	Original | Source |	Updated Source / R Acquisition Strategy |
-| :---: | :--- | :--- |
+| :---: | :--- | :--- | :--- | :--- |
 | Tmu |	Mean daily Temperature (C) |	MODIS |	Use Pre-Averaged Product (Mean Annual Temperature) / WorldClim via {geodata}. |
 | Pmu |	Mean daily Precipitation (mm/day)	| CHIRPS | Use Pre-Averaged Product (Annual Precipitation) / WorldClim via {geodata}. |
 | Nmu	| Mean NDVI	| MODIS |	MODIS products (e.g., MOD13A2) via {MODIStools}. |
