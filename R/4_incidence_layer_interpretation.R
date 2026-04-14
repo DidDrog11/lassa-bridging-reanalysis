@@ -182,20 +182,29 @@ binned_data <- human_df |>
     .groups = "drop"
   )
 
+raw_plot_data <- human_df |>
+  mutate(Context = case_when(Urban_Class == 1 ~ "Rural", 
+                             Urban_Class == 3 ~ "Urban", 
+                             TRUE ~ NA_character_)) |>
+  filter(!is.na(Context)) |>
+  mutate(Observed_Prev = n_pos / n_test)
+
+# Generate the plot with raw points
 p_shield <- ggplot() +
   geom_ribbon(data = boot_df, aes(x = Dx_Val, ymin = Lower_CI, ymax = Upper_CI, fill = Context), alpha = 0.2) +
-  geom_line(data = boot_df, aes(x = Dx_Val, y = Mean_Pred, colour = Context, linetype = Context), size = 1.2) +
-  geom_point(data = binned_data, aes(x = Mean_Dx, y = Observed_Prev, color = Context, size = Total_N), alpha = 0.9) +
+  geom_line(data = boot_df, aes(x = Dx_Val, y = Mean_Pred, colour = Context, linetype = Context), linewidth = 1.2) +
+  # Plot raw data points instead of bins
+  geom_point(data = raw_plot_data, aes(x = Dx_Val, y = Observed_Prev, color = Context, size = n_test), alpha = 0.5) +
   scale_colour_manual(values = c("Rural" = "#D55E00", "Urban" = "#0072B2")) +
   scale_fill_manual(values = c("Rural" = "#D55E00", "Urban" = "#0072B2")) +
   scale_linetype_manual(values = c("Rural" = "solid", "Urban" = "dashed")) +
-  scale_size_area(max_size = 6) + 
+  scale_size_area(max_size = 8) + 
   coord_cartesian(ylim = c(0, 0.6)) + 
   theme_minimal(base_size = 14) +
   labs(title = "The Socio-economic Shield",
-       x = "Ecological Risk Index (Dx)", 
-       y = "Predicted Seroprevalence",
-       size = "Sample Size", color = NULL, fill = NULL, linetype = NULL) +
+       x = "Ecological Hazard Index (Dx)", 
+       y = "Observed & Predicted Seroprevalence",
+       size = "Sample Size", color = "Context", fill = "Context", linetype = "Context") +
   theme(legend.position = "bottom")
 
 ggsave(here(figs_dir, "Fig7_Calibration_Shield.png"), p_shield, width = 8, height = 6, bg="white")
@@ -281,8 +290,8 @@ if(!is.na(nga_adm2_path)) {
                                  "Silent (Medium Risk)" = "#F0E442",
                                  "Silent (Low Risk)" = "gray90")) +
     theme_void() +
-    labs(title = "A. Nigeria", subtitle = "Risk stratification of LGAs with zero reported cases.") +
-    theme(legend.position = "none") # Collect legend later
+    labs(title = "A. Nigeria") +
+    theme(legend.position = "none")
   
   # Stats Check (Nigeria)
   auc_nga <- pROC::auc(nga_df$Status, nga_df$Mean_Inc)
@@ -329,7 +338,7 @@ if(length(mru_files) > 0) {
                                  "Silent (Medium Risk)" = "#F0E442",
                                  "Silent (Low Risk)" = "gray90")) +
     geom_spatvector(data = wa_vect |>
-                      filter(sov_a3 %in% mru_vect$GID_0.x), fill = "transparent", colour = "black", linewidth = 0.01) +
+                      filter(sov_a3 %in% mru_vect$GID_0.x), fill = "transparent", colour = "black", linewidth = 1) +
     theme_void() +
     labs(title = "B. Mano River Region", subtitle = "Validation against regional case counts.") +
     theme(legend.position = "right")
@@ -339,18 +348,63 @@ if(length(mru_files) > 0) {
   message(paste("Mano River Prediction AUC:", round(auc_mru, 3)))
 }
 
-# --- COMBINE AND SAVE ---
-if(exists("p_nga") & exists("p_mru")) {
-  # Layout: Nigeria (A) | MRU (B)
-  # We use 'collect' to share the legend from B
-  fig9 <- (p_nga | p_mru) + 
-    plot_layout(guides = "collect") +
-    plot_annotation(
-      title = "Surveillance Gaps in West Africa",
-      subtitle = "Identifying districts with high predicted incidence but no reported cases."
-    ) & theme(legend.position = "bottom")
+# --- PANEL C: REGIONAL VALIDATION SCATTERPLOT ---
+val_isos <- unique(val_cases_adm2$ADM0_name)
+adm_2_files <- list.files(path = here(data_dir, "gadm"), pattern = "_2_", full.names = TRUE)
+target_files <- adm_2_files[grepl(paste(val_isos, collapse = "|"), adm_2_files)]
+
+if(length(target_files) > 0) {
+  all_adm2_vect <- do.call(rbind, lapply(target_files, vect))
   
-  ggsave(here(figs_dir, "Fig9_Silent_Districts.png"), fig9, width = 12, height = 8, bg="white")
+  # Calculate Total Predicted Infections per Admin 2 unit (Sum)
+  all_adm2_vect$Total_Pred_Inc <- terra::extract(Incidence_Custom, all_adm2_vect, fun = sum, na.rm = TRUE)[,2]
+  
+  # Join with the case counts
+  val_scatter_df <- values(all_adm2_vect) |>
+    left_join(val_cases_adm2, by = c("GID_2" = "Location_Code")) |>
+    # Only keep rows that have validation data
+    filter(!is.na(ADM0_name)) |>
+    mutate(Annual_Cases = tidyr::replace_na(Annual_Cases, 0),
+           Total_Pred_Inc = tidyr::replace_na(Total_Pred_Inc, 0))
+  
+  # Calculate Spearman's Rho
+  cor_test <- cor.test(val_scatter_df$Total_Pred_Inc, val_scatter_df$Annual_Cases, 
+                       method = "spearman", exact = FALSE)
+  rho_val <- round(cor_test$estimate, 2)
+  p_val   <- round(cor_test$p.value, 2)
+  
+  message(paste("Overall Spearman's Rho:", rho_val, "| p-value:", p_val))
+  
+  # Generate Scatterplot
+  p_scatter <- ggplot(val_scatter_df, aes(x = Total_Pred_Inc + 1, y = Annual_Cases + 1)) +
+    geom_point(aes(fill = ADM0_name), shape = 21, size = 3, alpha = 0.7, color = "black") +
+    geom_smooth(method = "lm", color = "black", linetype = "dashed", se = FALSE) +
+    scale_fill_viridis_d(option = "turbo", name = "Country") +
+    scale_x_log10(labels = scales::comma) +
+    scale_y_log10(labels = scales::comma) +
+    theme_minimal(base_size = 14) +
+    labs(
+      title = "C. Predicted vs. Observed Burden",
+      subtitle = bquote("Spearman's" ~ rho == .(rho_val) ~ (p == .(p_val))),
+      x = "Predicted Annual Infections (Log10 + 1)",
+      y = "Reported Annual Cases (Log10 + 1)"
+    ) +
+    theme(legend.position = "right")
+}
+
+# --- COMBINE AND SAVE ---
+if(exists("p_nga") & exists("p_mru") & exists("p_scatter")) {
+  top_row <- (p_nga | p_mru) + 
+    plot_layout(guides = "collect") & 
+    theme(legend.position = "bottom")
+  
+  fig9 <- wrap_elements(top_row) / p_scatter + 
+    plot_layout(heights = c(2, 1.5)) +
+    plot_annotation(
+      title = "Surveillance Gaps and Model Validation",
+    )
+  
+  ggsave(here(figs_dir, "Fig9_Validation_and_Silent_Districts.png"), fig9, width = 12, height = 11, bg="white")
 }
 
 # 6. Load incidence burden ---------------------------------------------------

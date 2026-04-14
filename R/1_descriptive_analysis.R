@@ -419,3 +419,14 @@ final_plot <- top_row / bottom_row +
 
 # Save (Wider width for side-by-side layout)
 ggsave(here(figs_dir, "Fig1_Data_Distribution.png"), final_plot, width = 12, height = 12, dpi = 300, bg = "white")
+
+# 4. Extract Urban Sampling Statistic -------------------
+urban_sampling_stats <- rodent_df |>
+  filter(Source_Category == "Systematic Surveys (ArHa/WA)", 
+         Context %in% c("City", "Town")) |>
+  group_by(lat, lon) |>
+  summarise(mnat_detected = any(species == "Mastomys natalensis", na.rm = TRUE),
+            .groups = "drop") |>
+  summarise(total_urban_surveys = n(),
+            positive_surveys = sum(mnat_detected),
+            percent_positive = round((positive_surveys / total_urban_surveys) * 100, 1))

@@ -184,7 +184,7 @@ plot_data_main <- normalised_df |>
   filter(City %in% main_cities) |>
   mutate(City = factor(City, levels = main_cities))
 
-p_main <- plot_urban_paradox(plot_data_main, "The Urban Paradox: Hazard vs. Incidence")
+p_main <- plot_urban_paradox(plot_data_main, "Spatial Decoupling: Hazard vs. Incidence")
 
 ggsave(here(figs_dir, "Fig10_Urban_Paradox_Profiles.png"), p_main, width = 11, height = 5, bg="white")
 

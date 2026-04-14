@@ -202,3 +202,70 @@ saveRDS(out_imsom_reduced, save_path)
 # R-hat should be < 1.1 for convergence
 cat("Beta (Occupancy):", max(out_imsom_reduced$rhat$beta, na.rm = TRUE), "\n")
 cat("Alpha (Detection):", max(unlist(out_imsom_reduced$rhat$alpha), na.rm = TRUE), "\n")
+
+# 6. Sensitivity Analysis: Climate-Only Single Species Model --------------
+target_sp <- "Mastomys natalensis"
+sp_idx    <- which(spp_vector == target_sp)
+
+# Create new data list for intPGOcc (Integrated Single Species)
+data_list_mn <- list(y = list(data_list$y[[1]][sp_idx, , ], # Slice ArHa (Sites x Replicates)
+                              data_list$y[[2]][sp_idx, , ]  # Slice Opportunistic
+                              ),
+                     occ.covs = data_list$occ.covs,
+                     det.covs = data_list$det.covs,
+                     sites = data_list$sites)
+
+# B. Define "Climate Only" Formula
+# Strictly environmental: Temp, Precip, NDVI, Elevation. 
+occ_formula_climate <- ~ Tmu + Pmu + Nmu + Elev
+
+# C. Define Priors & Inits for Single Species
+priors_mn <- list(beta.normal = list(mean = 0, var = 2.72), # Standard logistic prior
+                  alpha.normal = list(mean = list(mu_alpha_arha, mu_alpha_opp), 
+                                      var  = list(var_alpha_arha, var_alpha_opp)))
+
+# Initial values
+z_init_mn <- z_init[sp_idx, ]
+
+inits_mn <- list(alpha = list(0, 0),
+                 beta  = 0,
+                 z     = z_init_mn)
+
+# D. Run the Model (intPGOcc)
+out_climate_null <- intPGOcc(occ.formula = occ_formula_climate,
+                             det.formula = det_formulas,
+                             data = data_list_mn,
+                             inits = inits_mn,
+                             priors = priors_mn,
+                             n.samples = n_samples,
+                             n.burn = n_burn,
+                             n.thin = n_thin,
+                             n.chains = n_chains,
+                             n.omp.threads = 6,
+                             verbose = TRUE,
+                             n.report = 5000)
+out_full_single <- intPGOcc(occ.formula = occ_formula_reduced,
+                            det.formula = det_formulas,
+                            data = data_list_mn,
+                            inits = inits_mn,
+                            priors = priors_mn,
+                            n.samples = n_samples,
+                            n.burn = n_burn,
+                            n.thin = n_thin,
+                            n.chains = n_chains,
+                            n.omp.threads = 6,
+                            verbose = TRUE,
+                            n.report = 5000)
+# E. Compare WAIC
+waic_climate <- waicOcc(out_climate_null)
+waic_full    <- waicOcc(out_full_single)
+
+total_climate <- sum(waic_climate[,3])
+total_full    <- sum(waic_full[,3])
+
+message("---------------------------------------------------")
+message("SINGLE SPECIES WAIC COMPARISON:")
+message("1. Climate Only (Basinski Null): ", round(total_climate, 2))
+message("2. Full Model (Urban + Pop^2):   ", round(total_full, 2))
+message("---------------------------------------------------")
+message("Delta WAIC: ", round(total_climate - total_full, 2))
