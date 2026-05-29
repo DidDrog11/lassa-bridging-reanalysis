@@ -181,6 +181,7 @@ for (scen_name in names(scenarios)) {
   terra::writeRaster(Omega_raster, here(maps_dir, paste0("Omega_", scen_name, ".tif")), overwrite = TRUE)
   
   # Incidence Calculation (SIRS)
+  # n.b. mu is mislabelled here, it actually refers to f the infection specific fatality rate
   gam_val <- 12; mu_val <- 0.02
   Base_Cases <- Omega_raster * Pop_count * (drast + gam_val) * (drast) / (gam_val * (1 - mu_val))
   
