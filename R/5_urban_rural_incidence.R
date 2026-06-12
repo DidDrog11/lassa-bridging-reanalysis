@@ -127,6 +127,7 @@ normalised_df <- profile_df |>
                                     Variable == "Shield_NTL" ~ "Urban Shield (NTL)",
                                     Variable == "Incidence"  ~ "Predicted Incidence"))
 
+write_rds(normalised_df, here("data", "processed", "normalised_profile_data.rds"))
 
 # 4. Plotting Function ----------------------------------------------------
 
